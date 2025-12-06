@@ -1,8 +1,8 @@
 import streamlit as st
 
 with st.sidebar:
-    st.title("Welcome to my portfolio")
-
+    st.markdown("### Quick Links")
+    st.markdown("- [GitHub Repository](https://github.com/owenng71/portfolio-by-streamlit)")
 
 about_page = st.Page(
     page="views/DefaultPage.py",   # NEW DEFAULT PAGE
@@ -28,9 +28,6 @@ hobbies_page = st.Page(
     title="Hobbies",
     icon="🎮"
 )
-
-# ---- NAVIGATION ----
-
 
 st.navigation({
     "Info": [about_page, overview_page, unilife_page, hobbies_page]
